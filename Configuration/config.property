@@ -1,0 +1,30 @@
+#Specify which tests you want to run.
+TESTS_TO_RUN = 1,2,3,4,5,6,7
+
+#Specify which environment you want tests to run on.(Dev, Preprod, Live proving, Live)
+ENVIRONMENT = Dev
+
+#Specify which browser you want to run the test with? (chrome,firefox)
+CHOSEN_BROWSER = chrome
+
+#Once test completes (pass or fail) do you want the browser to close automatically before starting the next test? (Yes, No)
+CLOSE_BROWSER_WHEN_DONE = Yes
+
+#Set the number of days after which all HTML Reports should be deleted from the Reports folder, since they tend to pile up. (0 or more)
+DELETE_REPORTS_AFTER_DAYS = 2
+
+# Development Environment url:
+DEV_CUSTOMER_URL = https://onboarding.business.hsbc.co.uk/portalserver/onboarding?ES_STATE_RESET=true&role
+DEV_STAFF_URL =
+
+# Preproduction Environment url:
+PREPROD_CUSTOMER_URL =
+PREPROD_STAFF_URL =
+
+# Live Proving Environment url:
+LIVE_PROVING_CUSTOMER_URL =
+LIVE_PROVING_STAFF_URL =
+
+# Development Environment url:
+LIVE_CUSTOMER_URL =
+LIVE_STAFF_URL =

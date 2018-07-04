@@ -1,0 +1,101 @@
+
+################################################################
+#							           SCENARIO 3
+################################################################
+
+
+# __________________________ Test Setup ________________________
+
+	URL_TYPE = Customer
+
+# ______________________ Getting Started _______________________
+
+	LEGAL_STRUCTURE_OF_BUSINESS = Partnership
+
+# _______________________ Business Overview ____________________
+
+  BUSINESS_START_DATE = 01.01.2018
+  COMPANY_NAME = ABC Pvt Ltd
+	WHAT_INFLUENCED_YOUR_DECISION = Convenience - HSBC is my nearest branch
+	SEARCH_FOR_ACTIVITY = Test
+	SEARCH_ACTIVITY_RESULT_LINK = COMPUTER CONSULTANCY ACTIVITIES
+	WHAT_YOUR_BUSINESS_DOES = Computing developers
+	DETAILS_OF_THE_PRODUCT = Computing developers
+  DETAILS_OF_THE_SERVICE = Computing developers
+	WHERE_BUSINESS_OPERATES_FROM = Multiple Premises
+  POSTCODE = S1 3GG
+  FIND_MY_ADDRESS_LINK = H S B C, Silver Street Head, Sheffield, S1 3GG
+	EMAIL_ADDRESS = datesting2@gmail.com
+	MOBILE_NUMBER = 07926667109
+	BIRTH_DATE = 10.10.1980
+
+# _______________________ Business Details ______________________
+
+  HOW_MANY_EMPLOYEES = 100
+	LICENCE_TO_OPERATE = Yes, I do have a licence
+	VAT_NUMBER = 123456
+	BUSINESS_EMAIL_ADDRESS = datesting2@gmail.com
+	BUSINESS_CONTACT_NUMBER = 7926667109
+  PERSONAL_TITLE = Mrs.
+  PERSONAL_FORENAMES = Inputter
+  PERSONAL_SURNAME = Test
+
+# __________________ Business Finance ___________________________
+
+	TURNOVER_FOR_NEXT_12_MONTHS = 100000
+	FORCAST_PROFIT_NEXT_YEAR = 50000
+	INITIALLY_INVESTED = 50000
+	SOURCE_TYPE = Personal investment  (e.g. your savings)
+	AMOUNT_IN_GBP_1 = 25000
+  INVESTOR_TITLE = Mrs.
+	INVESTOR_FORENAMES = Coapp-one
+	INVESTOR_SURNAME = Test
+	INVESTED_AMOUNT = 25000
+	INVESTOR_MOBILE_PHONE = 7789612345
+	INVESTOR_EMAIL_ADDRESS = datesting3@gmail.com
+	HOW_MUCH_WILL_BE_DEPOSITED = 50000
+	HOW_WILL_THIS_BE_PAID_IN = Cash
+
+# ________________________ About You ____________________________
+
+	MERITAL_STATUS = Married/ Civil Partnership
+	RESIDENTIAL_STATUS = Living with a parent
+	GROSS_INCOME_LAST_YEAR = 50000
+	YEARS_WITH_EXISTING_BANK = 10
+	DATE_MOVED_IN = 10.10.2000
+	SOURCE_OF_INVESTMENT_1 = Personal savings excl. savings from employment
+	SOURCE_AMOUNT_1 = 10000
+  SOURCE_OF_INVESTMENT_2 = Profits from investments
+  SOURCE_AMOUNT_2 = 15000
+  FURTHER_DETAILS = Investment returns
+
+# ______________________ Related Persons ________________________
+
+	POSITION_1 = Business partner
+  PERCENTAGE_SHAREHOLDING = 50
+  POSITION_2 = Business partner
+  PERCENTAGE_OWNERSHIP = 50
+  RELATED_PERSONS_TITLE = Mrs.
+  RELATED_PERSONS_FORENAMES = Coapp-two
+  RELATED_PERSONS_SURNAME = Test
+  RELATED_PERSONS_PHONE = 7788911223
+  RELATED_PERSONS_EMAIL_ADDRESS = datesting4@gmail.com
+  POSITION_3 = Accountant
+
+# ____________________ Managing Your Account ___________________
+
+  CHAIRPERSON_OF_THE_MEETING = Inputter Test
+  RESOLUTION_DATE = 01.01.2018
+	HOW_TO_RECEIVE_ACTIVATION_CODE = Text
+	SECURITY_PASS_NUMBER = 123456
+	CONFIRM_SECURITY_PASS_NUMBER = 123456
+	MEMORABLE_WORD = test
+	MEMORABLE_PLACE = test
+
+# ______________________ Tax Declaration _______________________
+
+	#none
+
+# _________________________ Summary ____________________________
+
+	#none

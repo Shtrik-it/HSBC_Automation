@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="10" passed="10">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="187251" started-at="2018-07-01T16:13:43Z" finished-at="2018-07-01T16:16:50Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="187251" started-at="2018-07-01T16:13:43Z" finished-at="2018-07-01T16:16:50Z">
+      <class name="com.hsbc.tests.Scenario6">
+        <test-method status="PASS" signature="beforeSuite()[pri:0, instance:com.hsbc.tests.Scenario6@68be2bc2]" name="beforeSuite" is-config="true" duration-ms="249" started-at="2018-07-01T18:13:43Z" finished-at="2018-07-01T18:13:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeSuite -->
+        <test-method status="PASS" signature="startBrowserAndInitClasses()[pri:0, instance:com.hsbc.tests.Scenario6@68be2bc2]" name="startBrowserAndInitClasses" is-config="true" duration-ms="5199" started-at="2018-07-01T18:13:43Z" finished-at="2018-07-01T18:13:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startBrowserAndInitClasses -->
+        <test-method status="PASS" signature="gettingStartedPage()[pri:0, instance:com.hsbc.tests.Scenario6@68be2bc2]" name="gettingStartedPage" duration-ms="10677" started-at="2018-07-01T18:13:48Z" finished-at="2018-07-01T18:13:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- gettingStartedPage -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.hsbc.tests.Scenario6@68be2bc2]" name="afterMethod" is-config="true" duration-ms="1" started-at="2018-07-01T18:13:59Z" finished-at="2018-07-01T18:13:59Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=gettingStartedPage status=SUCCESS method=Scenario6.gettingStartedPage()[pri:0, instance:com.hsbc.tests.Scenario6@68be2bc2] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="fastTrackTheApplication()[pri:0, instance:com.hsbc.tests.Scenario6@68be2bc2]" name="fastTrackTheApplication" duration-ms="1245" started-at="2018-07-01T18:13:59Z" depends-on-methods="com.hsbc.tests.Scenario6.gettingStartedPage" finished-at="2018-07-01T18:14:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- fastTrackTheApplication -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.hsbc.tests.Scenario6@68be2bc2]" name="afterMethod" is-config="true" duration-ms="0" started-at="2018-07-01T18:14:00Z" finished-at="2018-07-01T18:14:00Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=fastTrackTheApplication status=SUCCESS method=Scenario6.fastTrackTheApplication()[pri:0, instance:com.hsbc.tests.Scenario6@68be2bc2] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="bussinessOverviewPage()[pri:0, instance:com.hsbc.tests.Scenario6@68be2bc2]" name="bussinessOverviewPage" duration-ms="31292" started-at="2018-07-01T18:14:00Z" depends-on-methods="com.hsbc.tests.Scenario6.fastTrackTheApplication" finished-at="2018-07-01T18:14:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bussinessOverviewPage -->
+        <test-method status="PASS" signature="businessDetailsPage()[pri:0, instance:com.hsbc.tests.Scenario6@68be2bc2]" name="businessDetailsPage" duration-ms="27821" started-at="2018-07-01T18:14:31Z" depends-on-methods="com.hsbc.tests.Scenario6.bussinessOverviewPage" finished-at="2018-07-01T18:14:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- businessDetailsPage -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.hsbc.tests.Scenario6@68be2bc2]" name="afterMethod" is-config="true" duration-ms="0" started-at="2018-07-01T18:14:31Z" finished-at="2018-07-01T18:14:31Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=bussinessOverviewPage status=SUCCESS method=Scenario6.bussinessOverviewPage()[pri:0, instance:com.hsbc.tests.Scenario6@68be2bc2] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.hsbc.tests.Scenario6@68be2bc2]" name="afterMethod" is-config="true" duration-ms="0" started-at="2018-07-01T18:14:59Z" finished-at="2018-07-01T18:14:59Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=businessDetailsPage status=SUCCESS method=Scenario6.businessDetailsPage()[pri:0, instance:com.hsbc.tests.Scenario6@68be2bc2] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="businessFinancePage()[pri:0, instance:com.hsbc.tests.Scenario6@68be2bc2]" name="businessFinancePage" duration-ms="29141" started-at="2018-07-01T18:14:59Z" depends-on-methods="com.hsbc.tests.Scenario6.businessDetailsPage" finished-at="2018-07-01T18:15:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- businessFinancePage -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.hsbc.tests.Scenario6@68be2bc2]" name="afterMethod" is-config="true" duration-ms="0" started-at="2018-07-01T18:15:28Z" finished-at="2018-07-01T18:15:28Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=businessFinancePage status=SUCCESS method=Scenario6.businessFinancePage()[pri:0, instance:com.hsbc.tests.Scenario6@68be2bc2] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="aboutYouPage()[pri:0, instance:com.hsbc.tests.Scenario6@68be2bc2]" name="aboutYouPage" duration-ms="18489" started-at="2018-07-01T18:15:28Z" depends-on-methods="com.hsbc.tests.Scenario6.businessFinancePage" finished-at="2018-07-01T18:15:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- aboutYouPage -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.hsbc.tests.Scenario6@68be2bc2]" name="afterMethod" is-config="true" duration-ms="1" started-at="2018-07-01T18:15:47Z" finished-at="2018-07-01T18:15:47Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=aboutYouPage status=SUCCESS method=Scenario6.aboutYouPage()[pri:0, instance:com.hsbc.tests.Scenario6@68be2bc2] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="relatedPersonsPage()[pri:0, instance:com.hsbc.tests.Scenario6@68be2bc2]" name="relatedPersonsPage" duration-ms="18769" started-at="2018-07-01T18:15:47Z" depends-on-methods="com.hsbc.tests.Scenario6.aboutYouPage" finished-at="2018-07-01T18:16:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- relatedPersonsPage -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.hsbc.tests.Scenario6@68be2bc2]" name="afterMethod" is-config="true" duration-ms="0" started-at="2018-07-01T18:16:06Z" finished-at="2018-07-01T18:16:06Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=relatedPersonsPage status=SUCCESS method=Scenario6.relatedPersonsPage()[pri:0, instance:com.hsbc.tests.Scenario6@68be2bc2] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="managingYourAccountPage()[pri:0, instance:com.hsbc.tests.Scenario6@68be2bc2]" name="managingYourAccountPage" duration-ms="26968" started-at="2018-07-01T18:16:06Z" depends-on-methods="com.hsbc.tests.Scenario6.relatedPersonsPage" finished-at="2018-07-01T18:16:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- managingYourAccountPage -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.hsbc.tests.Scenario6@68be2bc2]" name="afterMethod" is-config="true" duration-ms="0" started-at="2018-07-01T18:16:33Z" finished-at="2018-07-01T18:16:33Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=managingYourAccountPage status=SUCCESS method=Scenario6.managingYourAccountPage()[pri:0, instance:com.hsbc.tests.Scenario6@68be2bc2] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="taxDeclarationPage()[pri:0, instance:com.hsbc.tests.Scenario6@68be2bc2]" name="taxDeclarationPage" duration-ms="4498" started-at="2018-07-01T18:16:33Z" depends-on-methods="com.hsbc.tests.Scenario6.managingYourAccountPage" finished-at="2018-07-01T18:16:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- taxDeclarationPage -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.hsbc.tests.Scenario6@68be2bc2]" name="afterMethod" is-config="true" duration-ms="0" started-at="2018-07-01T18:16:37Z" finished-at="2018-07-01T18:16:37Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=taxDeclarationPage status=SUCCESS method=Scenario6.taxDeclarationPage()[pri:0, instance:com.hsbc.tests.Scenario6@68be2bc2] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="summaryPage()[pri:0, instance:com.hsbc.tests.Scenario6@68be2bc2]" name="summaryPage" duration-ms="12927" started-at="2018-07-01T18:16:37Z" depends-on-methods="com.hsbc.tests.Scenario6.taxDeclarationPage" finished-at="2018-07-01T18:16:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- summaryPage -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.hsbc.tests.Scenario6@68be2bc2]" name="afterMethod" is-config="true" duration-ms="0" started-at="2018-07-01T18:16:50Z" finished-at="2018-07-01T18:16:50Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=summaryPage status=SUCCESS method=Scenario6.summaryPage()[pri:0, instance:com.hsbc.tests.Scenario6@68be2bc2] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.hsbc.tests.Scenario6@68be2bc2]" name="tearDown" is-config="true" duration-ms="198" started-at="2018-07-01T18:16:50Z" finished-at="2018-07-01T18:16:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="afterSuite()[pri:0, instance:com.hsbc.tests.Scenario6@68be2bc2]" name="afterSuite" is-config="true" duration-ms="2772" started-at="2018-07-01T18:16:50Z" finished-at="2018-07-01T18:16:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterSuite -->
+      </class> <!-- com.hsbc.tests.Scenario6 -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

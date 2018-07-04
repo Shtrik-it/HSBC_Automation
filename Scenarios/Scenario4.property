@@ -1,0 +1,85 @@
+
+################################################################
+#					     SCENARIO 4
+################################################################
+
+
+# __________________________ Test Setup ________________________
+
+  URL_TYPE = Customer
+
+# ______________________ Getting Started _______________________
+
+  LEGAL_STRUCTURE_OF_BUSINESS = Society
+
+# _______________________ Business Overview ____________________
+
+  BUSINESS_START_DATE = 01.01.2018
+  COMPANY_NAME = ABC Pvt Ltd
+  WHAT_INFLUENCED_YOUR_DECISION = Convenience - HSBC is my nearest branch
+  WHAT_YOUR_BUSINESS_DOES = Society Development
+  DETAILS_OF_THE_SERVICE = Society Development
+  WHERE_BUSINESS_OPERATES_FROM = Home Based
+  POSTCODE = S1 3GG
+  FIND_MY_ADDRESS_LINK = H S B C, Silver Street Head, Sheffield, S1 3GG
+  EMAIL_ADDRESS = datesting2@gmail.com
+  MOBILE_NUMBER = 07926667109
+  BIRTH_DATE = 10.10.1980
+
+# _______________________ Business Details ______________________
+
+  HOW_MANY_EMPLOYEES = 10
+  COUNTRY_MAJORITY_BASED_IN = United Kingdom
+  LICENCE_TO_OPERATE = Yes, I do have a licence
+  VAT_NUMBER = 123456
+  BUSINESS_EMAIL_ADDRESS = datesting2@gmail.com
+  BUSINESS_CONTACT_NUMBER = 7926667109
+  PERSONAL_TITLE = Mr.
+  PERSONAL_FORENAMES = Inputter
+  PERSONAL_SURNAME = Test
+
+# Business Finance ______________________________________________
+
+  TURNOVER_FOR_NEXT_12_MONTHS = 100000
+  CASH_AMOUNT_EACH_YEAR = 5,001 - 10,000
+  HOW_OFTEN_CASH_DEPOSITS = Quarterly
+  TYPICAL_CASH_PAYMENT = 2,001 - 5,000
+  INFO_ON_CASH_PAYMENTS = New Year
+  INITIALLY_INVESTED = 10000
+  SOURCE_TYPE = Membership fees
+  INVESTED_AMOUNT = 10000
+  HOW_MUCH_WILL_BE_DEPOSITED = 10000
+  NUMBER_OF_MEMBERS = 10 1000
+  HOW_WILL_THIS_BE_PAID_IN = Cash
+
+# About You _____________________________________________________
+
+  MERITAL_STATUS = Other
+  RESIDENTIAL_STATUS = Other
+  DATE_MOVED_IN = 10.10.2000
+
+# Related Persons ______________________________________________
+
+  POSITION_1 = Chairperson
+  RELATED_PERSONS_TITLE = Mrs.
+  RELATED_PERSONS_FORENAMES = Coapp-one
+  RELATED_PERSONS_SURNAME = Test
+  RELATED_PERSONS_PHONE = 7788911223
+  RELATED_PERSONS_EMAIL_ADDRESS = datesting4@gmail.com
+  RELATED_PERSONS_POSITION = Company Secretary
+
+# Managing Your Account_________________________________________
+
+  HOW_TO_RECEIVE_ACTIVATION_CODE = Email
+  SECURITY_PASS_NUMBER = 123456
+  CONFIRM_SECURITY_PASS_NUMBER = 123456
+  MEMORABLE_WORD = test
+  MEMORABLE_PLACE = test
+
+# Tax Declaration ______________________________________________
+
+  ACTIVE_TRADE = Society development
+
+# Summary ______________________________________________________
+
+	#none

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [HSBCSuite]">
+  <test name="ScenarioRun">
+    <classes>
+      <class name="com.hsbc.tests.Scenario5"/>
+      <class name="com.hsbc.tests.Scenario6"/>
+    </classes>
+  </test> <!-- ScenarioRun -->
+  <test name="ScenarioRun(failed)">
+    <classes>
+      <class name="com.hsbc.tests.Scenario6">
+        <methods>
+          <include name="bussinessOverviewPage"/>
+          <include name="businessFinancePage"/>
+          <include name="gettingStartedPage"/>
+          <include name="taxDeclarationPage"/>
+          <include name="startBrowserAndInitClasses"/>
+          <include name="aboutYouPage"/>
+          <include name="tearDown"/>
+          <include name="businessDetailsPage"/>
+          <include name="afterMethod"/>
+          <include name="fastTrackTheApplication"/>
+          <include name="relatedPersonsPage"/>
+          <include name="summaryPage"/>
+          <include name="managingYourAccountPage"/>
+        </methods>
+      </class> <!-- com.hsbc.tests.Scenario6 -->
+      <class name="com.hsbc.tests.Scenario5">
+        <methods>
+          <include name="afterSuite"/>
+          <include name="startBrowserAndInitClasses"/>
+          <include name="tearDown"/>
+          <include name="beforeSuite"/>
+          <include name="afterMethod"/>
+        </methods>
+      </class> <!-- com.hsbc.tests.Scenario5 -->
+    </classes>
+  </test> <!-- ScenarioRun(failed) -->
+</suite> <!-- Failed suite [HSBCSuite] -->

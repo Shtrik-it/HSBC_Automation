@@ -1,0 +1,87 @@
+
+################################################################
+#							           SCENARIO 5
+################################################################
+
+
+# __________________________ Test Setup ________________________
+
+	URL_TYPE = Customer
+
+# ______________________ Getting Started _______________________
+
+	LEGAL_STRUCTURE_OF_BUSINESS = Unlimited Company
+
+# _______________________ Business Overview ____________________
+
+	COMPANIES_HOUSE_NO = 10078911
+  BUSINESS_START_DATE = 01.01.2018
+  COMPANY_NAME = Abc Test
+	WHAT_INFLUENCED_YOUR_DECISION = Convenience - HSBC is my nearest branch
+  SEARCH_FOR_ACTIVITY = Test
+	SEARCH_ACTIVITY_RESULT_LINK = COMPUTER CONSULTANCY ACTIVITIES
+	WHAT_YOUR_BUSINESS_DOES = Computer Repair
+  DETAILS_OF_THE_SERVICE = Computer Repair
+	WHERE_BUSINESS_OPERATES_FROM = Home Based
+  POSTCODE = E1 1LF
+  FIND_MY_ADDRESS_LINK = 37-39, Commercial Road, London, E1 1LF
+	EMAIL_ADDRESS = datesting2@gmail.com
+	MOBILE_NUMBER = 07926667109
+	BIRTH_DATE = 11.11.1980
+
+# _______________________ Business Details ______________________
+
+  HOW_MANY_EMPLOYEES = 10
+	LICENCE_TO_OPERATE = Yes, I do have a licence
+	VAT_NUMBER = 123456
+	BUSINESS_EMAIL_ADDRESS = datesting2@gmail.com
+	BUSINESS_CONTACT_NUMBER = 7926667109
+  PERSONAL_TITLE = Mr.
+  PERSONAL_FORENAMES = Inputter
+  PERSONAL_SURNAME = Test
+
+# Business Finance ______________________________________________
+
+	TURNOVER_FOR_NEXT_12_MONTHS = 100000
+  FORCAST_PROFIT_NEXT_YEAR = 50000
+	INITIALLY_INVESTED = 50000
+	SOURCE_TYPE = Personal investment  (e.g. your savings)
+	AMOUNT_IN_GBP_1 = 50000
+  HOW_MUCH_WILL_BE_DEPOSITED = 50000
+	HOW_WILL_THIS_BE_PAID_IN = Cash
+
+# About You _____________________________________________________
+
+	MERITAL_STATUS = Single
+  RESIDENTIAL_STATUS = Other
+	GROSS_INCOME_LAST_YEAR = 50000
+	YEARS_WITH_EXISTING_BANK = 10
+	DATE_MOVED_IN = 10.10.2000
+	SOURCE_OF_INVESTMENT_1 = Personal savings excl. savings from employment
+	SOURCE_AMOUNT_1 = 25000
+  SOURCE_OF_INVESTMENT_2 = Profits from investments
+  SOURCE_AMOUNT_2 = 25000
+  FURTHER_DETAILS = Investment returns
+
+# Related Persons ______________________________________________
+
+	POSITION_1 = Other
+	PERCENTAGE_SHAREHOLDING = 50
+
+# ____________________ Managing Your Account ___________________
+
+	CHAIRPERSON_OF_THE_MEETING = Inputter Test
+	RESOLUTION_DATE = 01.01.2018
+	HOW_TO_RECEIVE_ACTIVATION_CODE = Email
+	SECURITY_PASS_NUMBER = 123456
+	CONFIRM_SECURITY_PASS_NUMBER = 123456
+	MEMORABLE_WORD = Test
+	MEMORABLE_PLACE = Test
+
+# ________________________ Tax Declaration _____________________
+
+	#none
+
+# ____________________________ Summary _________________________
+
+	#none

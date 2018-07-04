@@ -1,0 +1,1049 @@
+
+<!DOCTYPE html>
+<html>
+
+
+<head>
+	<meta charset='utf-8' /> 
+	<meta name='description' content='' />
+	<meta name='robots' content='noodp, noydir' />
+	<meta name='viewport' content='width=device-width, initial-scale=1' />
+	<meta id="timeStampFormat" name="timeStampFormat" content='MMM d, yyyy hh:mm:ss a'/>
+	
+	<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600' rel='stylesheet' type='text/css' />
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+
+		<link href='https://cdn.rawgit.com/anshooarora/extentreports-java/b4a58fcfd1e137bd9287244035a7c80d3d73b3af/dist/css/extent.css' type='text/css' rel='stylesheet' />
+	
+	<title>HSBC Report</title>
+
+	<style type='text/css'>
+	</style>
+</head>
+
+	<body class='extent dark default hide-overflow '>
+		<div id='theme-selector' alt='Click to toggle theme. To enable by default, use theme configuration.' title='Click to toggle theme. To enable by default, use theme configuration.'>
+			<span><i class='material-icons'>desktop_windows</i></span>
+		</div>
+
+<nav>
+	<div class="nav-wrapper">
+		<a href="#!" class="brand-logo blue darken-3">Extent</a>
+
+		<!-- slideout menu -->
+		<ul id='slide-out' class='side-nav fixed hide-on-med-and-down'>
+			<li class='waves-effect active'><a href='#!' view='test-view' onclick="configureView(0);chartsView('test');"><i class='material-icons'>dashboard</i></a></li>
+						<li class='waves-effect'><a href='#!' onclick="configureView(-1);chartsView('dashboard');" view='dashboard-view'><i class='material-icons'>track_changes</i></i></a></li>
+		</ul>
+
+		<!-- report name -->
+		<span class='report-name'>HSBC AUTOMATION REPORT</span>
+		
+		<!-- report headline -->
+		<span class='report-headline'></span>
+
+		<!-- nav-right -->
+		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
+			<li>
+                <a href='#!'>
+                    <span class='label suite-start-time blue darken-3'>Jul 1, 2018 06:13:43 PM</span>
+				</a>
+			</li>
+			<li>
+                <a href='#!'>
+                    <span class='label blue darken-3'>3.1.5</span>
+				</a>
+			</li>
+		</ul>
+	</div>
+</nav>
+
+		<!-- container -->
+		<div class='container'>
+
+<div id='test-view' class='view'>
+				
+	<section id='controls'>
+		<div class='controls grey lighten-4'>
+			<!-- test toggle -->
+			<div class='chip transparent'>
+				<a class='dropdown-button tests-toggle' data-activates='tests-toggle' data-constrainwidth='true' data-beloworigin='true' data-hover='true' href='#'>
+					<i class='material-icons'>warning</i> Status
+				</a>
+				<ul id='tests-toggle' class='dropdown-content'>
+											<li status='pass'><a href='#!'>Pass <i class='material-icons green-text'>check_circle</i></a></li>
+					<li class='divider'></li>
+					<li status='clear' clear='true'><a href='#!'>Clear Filters <i class='material-icons'>clear</i></a></li>
+				</ul>
+			</div>
+			<!-- test toggle -->
+
+			<!-- category toggle -->
+			<!-- category toggle -->
+
+			<!-- clear filters -->
+			<div class='chip transparent hide'>
+				<a class='' id='clear-filters' alt='Clear Filters' title='Clear Filters'>
+					<i class='material-icons'>close</i> Clear
+				</a>
+			</div>
+			<!-- clear filters -->
+
+			<!-- enable dashboard -->
+			<div id='toggle-test-view-charts' class='chip transparent'>
+				<a class='pink-text' id='enable-dashboard' alt='Enable Dashboard' title='Enable Dashboard'>
+					<i class='material-icons'>track_changes</i> Dashboard
+				</a>
+			</div>
+			<!-- enable dashboard -->
+
+			<!-- search -->
+			<div class='chip transparent' alt='Search Tests' title='Search Tests'>
+				<a href="#" class='search-div'>
+					<i class='material-icons'>search</i> Search
+				</a>
+
+				<div class='input-field left hide'>
+					<input id='search-tests' type='text' class='validate browser-default' placeholder='Search Tests...'>
+				</div>
+				
+			</div>
+			<!-- search -->
+		</div>
+	</section>
+
+
+<div id='test-view-charts' class='subview-full'>
+	<div id='charts-row' class='row nm-v nm-h'>
+		<div class='col s12 m6 l6 np-h'>
+			<div class='card-panel nm-v'>
+				<div class='left panel-name'>Tests</div>
+				<div class='chart-box'>
+					<canvas id='parent-analysis' width='100' height='80'></canvas>
+				</div>
+				<div class='block text-small'>
+					<span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>1</span> test(s) passed</span>
+				</div>
+				<div class='block text-small'>
+					<span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> test(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
+				</div>
+			</div>
+		</div>
+		
+		<div class='col s12 m6 l6 np-h'>
+			<div class='card-panel nm-v'>
+				<div class='left panel-name'>Steps</div>
+				<div class='chart-box'>
+					<canvas id='child-analysis' width='100' height='80'></canvas>
+				</div>
+				<div class='block text-small'>
+					<span class='tooltipped' data-position='top' data-tooltip='0%'><span class='strong'>0</span> step(s) passed</span>
+				</div>
+				<div class='block text-small'>
+					<span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> step(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='100%'>145</span> others
+				</div>
+			</div>
+		</div>
+		
+	</div>
+</div>
+
+	<div class='subview-left left'>
+		
+		<div class='view-summary'>
+			<h5>Tests</h5>
+			<ul id='test-collection' class='test-collection'>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='1'>
+					<div class='test-heading'>
+						<span class='test-name'>Scenario6</span>
+						<span class='test-time'>Jul 1, 2018 06:13:48 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Jul 1, 2018 06:13:48 PM</span>
+	<span class='label end-time'>Jul 1, 2018 06:16:50 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 3m 2s+44ms</span>
+</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>6:13:51 PM</td>
+					<td class='step-details'>GettingStartedPage.haveAccountWithAnotherBank:  Radio button 'NO' is clicked.</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>6:13:54 PM</td>
+					<td class='step-details'>GettingStartedPage.chooseLegalStructureOfBusiness:  Dropdown option chosen 'Limited Liability Partnership'</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>6:13:55 PM</td>
+					<td class='step-details'>GettingStartedPage.everythingAboveIsTrue:  Radio button 'YES' is clicked.</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>6:13:58 PM</td>
+					<td class='step-details'>GettingStartedPage.clickTermsAndConditions:  Object 'I confirm that I have read and agree to the terms and conditions and pricing' clicked</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>6:13:59 PM</td>
+					<td class='step-details'>GettingStartedPage.clickContinueButton:  Object 'Continue' clicked</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>6:14:00 PM</td>
+					<td class='step-details'>FastTrackApplicationModal.clickFillApplicationManuallyLink:  Object 'I would prefer to fill in my application manually' clicked</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>6:14:01 PM</td>
+					<td class='step-details'>BusinessOverviewPage.fillCompaniesHouseNo:  Field populated with '10078911'</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>6:14:02 PM</td>
+					<td class='step-details'>BusinessOverviewPage.fillBusinessStartDate:  Field populated with '01.01.2018'</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>6:14:03 PM</td>
+					<td class='step-details'>BusinessOverviewPage.fillCompanyName:  Field populated with 'Abc Test'</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>6:14:05 PM</td>
+					<td class='step-details'>BusinessOverviewPage.chooseWhatInfluencedYourDecision:  Dropdown option chosen 'Convenience - HSBC is my nearest branch'</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>6:14:05 PM</td>
+					<td class='step-details'>BusinessOverviewPage.anyAccountsOutsideUK:  Radio button 'NO' is clicked.</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>6:14:06 PM</td>
+					<td class='step-details'>BusinessOverviewPage.searchForActivity:  Object 'Search for activity' clicked Attempting...</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>6:14:09 PM</td>
+					<td class='step-details'>BusinessOverviewPage.clickSearchActivityResultLink:  Object 'COMPUTER CONSULTANCY ACTIVITIES' clicked</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>6:14:10 PM</td>
+					<td class='step-details'>BusinessOverviewPage.fillWhatYourBusinessDoes:  Field populated with 'Computer Products And Services'</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>6:14:12 PM</td>
+					<td class='step-details'>BusinessOverviewPage.tickProducts:  Object 'Products' clicked</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>6:14:14 PM</td>
+					<td class='step-details'>BusinessOverviewPage.tickServices:  Object 'Services' clicked</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>6:14:15 PM</td>
+					<td class='step-details'>BusinessOverviewPage.fillDetailsOfTheProducts:  Field populated with 'Computer Products'</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>6:14:16 PM</td>
+					<td class='step-details'>BusinessOverviewPage.fillDetailsOfTheServices:  Field populated with 'Computer Services'</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>6:14:18 PM</td>
+					<td class='step-details'>BusinessOverviewPage.tickPublicOrIndividuals:  Object 'Public / Individuals' clicked</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>6:14:20 PM</td>
+					<td class='step-details'>BusinessOverviewPage.tickGovernmentOrPublicSector:  Object 'Government / Public sector' clicked</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>6:14:21 PM</td>
+					<td class='step-details'>BusinessOverviewPage.chooseWhereBussinesOperatesFrom:  Dropdown option chosen 'Single Premises'</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>6:14:22 PM</td>
+					<td class='step-details'>BusinessOverviewPage.fillPostcode:  Field populated with 'S1 3GG'</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>6:14:23 PM</td>
+					<td class='step-details'>BusinessOverviewPage.clickFindAddressButton:  Object 'Find address' clicked</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>6:14:24 PM</td>
+					<td class='step-details'>BusinessOverviewPage.clickFindAddressResultLink:  Object 'H S B C, Silver Street Head, Sheffield, S1 3GG' clicked</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>6:14:25 PM</td>
+					<td class='step-details'>BusinessOverviewPage.alsoAddressOfCompany:  Radio button 'YES' is clicked.</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>6:14:27 PM</td>
+					<td class='step-details'>BusinessOverviewPage.fillEmailAddress:  Field populated with 'datesting2@gmail.com'</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>6:14:28 PM</td>
+					<td class='step-details'>BusinessOverviewPage.fillMobileNumber:  Field populated with '07926667109'</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>6:14:30 PM</td>
+					<td class='step-details'>BusinessOverviewPage.fillBirthDate:  Field populated with '11.11.1980'</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>6:14:30 PM</td>
+					<td class='step-details'>SharedObjects.clickSaveAndContinueButton:  Object 'Save And Continue' clicked</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>6:14:33 PM</td>
+					<td class='step-details'>BusinessDetailsPage.printApplicationNumber:  APPLICATION NUMBER: 937551134171107</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>6:14:33 PM</td>
+					<td class='step-details'>BusinessDetailsPage$BusinessStructue.is25PercentOwnedByFamily:  Radio button 'NO' is clicked.</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>6:14:34 PM</td>
+					<td class='step-details'>BusinessDetailsPage$BusinessStructue.fillHowManyEmployees:  Field populated with '10'</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>6:14:35 PM</td>
+					<td class='step-details'>BusinessDetailsPage$BusinessStructue.isPartOfFranchize:  Radio button 'NO' is clicked.</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>6:14:35 PM</td>
+					<td class='step-details'>BusinessDetailsPage$BusinessStructue.ownsThePremises:  Radio button 'YES' is clicked.</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>6:14:36 PM</td>
+					<td class='step-details'>BusinessDetailsPage$BusinessStructue.chooseTypeOfPremises:  First radio button clicked.</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>6:14:37 PM</td>
+					<td class='step-details'>BusinessDetailsPage$BusinessStructue.licenceToOperate:  Dropdown option chosen 'Yes, I do have a licence'</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>6:14:38 PM</td>
+					<td class='step-details'>BusinessDetailsPage$BusinessStructue.registeredForVAT:  Radio button 'YES' is clicked.</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>6:14:39 PM</td>
+					<td class='step-details'>BusinessDetailsPage$BusinessStructue.fillVATNumber:  Field populated with '123456'</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>6:14:40 PM</td>
+					<td class='step-details'>BusinessDetailsPage$BusinessStructue.payTaxInUK:  Radio button 'YES' is clicked.</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>6:14:41 PM</td>
+					<td class='step-details'>BusinessDetailsPage$BusinessStructue.payTaxInOtherCountry:  Radio button 'NO' is clicked.</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>6:14:42 PM</td>
+					<td class='step-details'>BusinessDetailsPage$InternationalBusiness.dealWithOtherCountriesNext12Months:  Radio button 'NO' is clicked.</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>6:14:43 PM</td>
+					<td class='step-details'>BusinessDetailsPage$InternationalBusiness.dealWithOtherCountriesAfterOneYear:  Radio button 'NO' is clicked.</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>6:14:44 PM</td>
+					<td class='step-details'>BusinessDetailsPage$BusinessContactDetails.fillEmailAddress:  Field populated with 'datesting2@gmail.com'</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>6:14:46 PM</td>
+					<td class='step-details'>BusinessDetailsPage$BusinessContactDetails.fillContactNumber:  Field populated with '7926667109'</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>6:14:48 PM</td>
+					<td class='step-details'>BusinessDetailsPage$PersonalContactDetails.chooseTitle:  Dropdown option chosen 'Mr.'</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>6:14:48 PM</td>
+					<td class='step-details'>BusinessDetailsPage$PersonalContactDetails.fillForenames:  Field populated with 'Inputter'</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>6:14:49 PM</td>
+					<td class='step-details'>BusinessDetailsPage$PersonalContactDetails.fillSurname:  Field populated with 'Test'</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>6:14:51 PM</td>
+					<td class='step-details'>BusinessDetailsPage$PersonalContactDetails.mainPointOfContact:  Radio button 'NO' is clicked.</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>6:14:52 PM</td>
+					<td class='step-details'>BusinessDetailsPage$MainContactDetails.chooseTitle:  Dropdown option chosen 'Mr.'</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>6:14:52 PM</td>
+					<td class='step-details'>BusinessDetailsPage$MainContactDetails.fillForenames:  Field populated with 'Coapp-one'</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>6:14:53 PM</td>
+					<td class='step-details'>BusinessDetailsPage$MainContactDetails.fillSurname:  Field populated with 'test'</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>6:14:55 PM</td>
+					<td class='step-details'>BusinessDetailsPage$MainContactDetails.fillMobilePhoneNumber:  Field populated with '7789612345'</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>6:14:57 PM</td>
+					<td class='step-details'>BusinessDetailsPage$MainContactDetails.fillEmailAddress:  Field populated with 'datesting3@gmail.com'</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>6:14:59 PM</td>
+					<td class='step-details'>SharedObjects.clickSaveAndContinueButton:  Object 'Save And Continue' clicked</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>6:15:00 PM</td>
+					<td class='step-details'>BusinessFinancePage.fillTurnoverForNext12Months:  Field populated with '100000'</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>6:15:00 PM</td>
+					<td class='step-details'>BusinessFinancePage.fillForcastProfitNextYear:  Field populated with '50000'</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>6:15:01 PM</td>
+					<td class='step-details'>BusinessFinancePage.relyOnOneCustomer:  Radio button 'NO' is clicked.</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>6:15:02 PM</td>
+					<td class='step-details'>BusinessFinancePage.dealingWithCash:  Radio button 'NO' is clicked.</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>6:15:02 PM</td>
+					<td class='step-details'>SharedObjects.clickSaveAndContinueButton:  Object 'Save And Continue' clicked</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>6:15:06 PM</td>
+					<td class='step-details'>BusinessFinancePage.fillInitiallyInvested:  Field populated with '50000'</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>6:15:07 PM</td>
+					<td class='step-details'>BusinessFinancePage.anyAdditionalFunds:  Radio button 'NO' is clicked.</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>6:15:09 PM</td>
+					<td class='step-details'>BusinessFinancePage.chooseSourceType:  Dropdown option chosen 'Personal investment  (e.g. your savings)'</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>6:15:10 PM</td>
+					<td class='step-details'>BusinessFinancePage.clickEdit:  Object 'Edit' clicked</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>6:15:10 PM</td>
+					<td class='step-details'>BusinessFinancePage.fillAmountInGPBAndSave:  Field populated with '10000'</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>6:15:11 PM</td>
+					<td class='step-details'>BusinessFinancePage.clickRedSaveButton:  Object 'Save' clicked</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>6:15:12 PM</td>
+					<td class='step-details'>BusinessFinancePage.clickEdit:  Object 'Edit' clicked</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>6:15:13 PM</td>
+					<td class='step-details'>BusinessFinancePage.fillAmountInGPBAndSave:  Field populated with '10000'</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>6:15:14 PM</td>
+					<td class='step-details'>BusinessFinancePage.clickRedSaveButton:  Object 'Save' clicked</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>6:15:15 PM</td>
+					<td class='step-details'>BusinessFinancePage.clickAddNewInvestorButton:  Object '' clicked</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>6:15:16 PM</td>
+					<td class='step-details'>BusinessFinancePage.chooseTitle:  Dropdown option chosen 'Mr.'</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>6:15:17 PM</td>
+					<td class='step-details'>BusinessFinancePage.fillForenames:  Field populated with 'Coapp-two'</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>6:15:18 PM</td>
+					<td class='step-details'>BusinessFinancePage.fillSurname:  Field populated with 'Test'</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>6:15:19 PM</td>
+					<td class='step-details'>BusinessFinancePage.fillInvestedAmountInGBP:  Field populated with '30000'</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>6:15:20 PM</td>
+					<td class='step-details'>BusinessFinancePage.investorHoldsPosition:  Radio button 'YES' is clicked.</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>6:15:20 PM</td>
+					<td class='step-details'>BusinessFinancePage.fillMobilePhone:  Field populated with '7788991122'</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>6:15:22 PM</td>
+					<td class='step-details'>BusinessFinancePage.fillEmailAddress:  Field populated with 'datesting4@gmail.com'</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>6:15:23 PM</td>
+					<td class='step-details'>BusinessFinancePage.clickRedSaveButton:  Object 'Save' clicked</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>6:15:23 PM</td>
+					<td class='step-details'>BusinessFinancePage.fillHowMuchInvestmentWillBeDeposited:  Field populated with '50000'</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>6:15:25 PM</td>
+					<td class='step-details'>BusinessFinancePage.chooseHowWillThisBePaidIn:  Dropdown option chosen 'Cash'</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>6:15:26 PM</td>
+					<td class='step-details'>BusinessFinancePage.saveTheForm:  Object 'Saving the form...' clicked</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>6:15:26 PM</td>
+					<td class='step-details'>SharedObjects.clickSaveAndContinueButton:  Object 'Save And Continue' clicked</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>6:15:29 PM</td>
+					<td class='step-details'>AboutYouPage.existingPersonalCustomer:  Radio button 'NO' is clicked.</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>6:15:30 PM</td>
+					<td class='step-details'>AboutYouPage.chooseMeritalStatus:  Dropdown option chosen 'Living with partner'</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>6:15:31 PM</td>
+					<td class='step-details'>AboutYouPage.chooseGender:  Second radio button clicked.</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>6:15:31 PM</td>
+					<td class='step-details'>AboutYouPage.residentialStatus:  Dropdown option chosen 'Tenant'</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>6:15:33 PM</td>
+					<td class='step-details'>AboutYouPage.residentToPayTaxInUk:  Radio button 'YES' is clicked.</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>6:15:34 PM</td>
+					<td class='step-details'>AboutYouPage.residentToPayTaxInOtherCountry:  Radio button 'NO' is clicked.</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>6:15:34 PM</td>
+					<td class='step-details'>AboutYouPage.citizenOfAnyOtherCountry:  Radio button 'NO' is clicked.</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>6:15:34 PM</td>
+					<td class='step-details'>AboutYouPage.grossIncomeLastYear:  Field populated with '100000'</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>6:15:35 PM</td>
+					<td class='step-details'>AboutYouPage.yearsWithExistingBank:  Field populated with '10'</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>6:15:36 PM</td>
+					<td class='step-details'>AboutYouPage.debitCardWithAnotherBank:  Radio button 'YES' is clicked.</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>6:15:37 PM</td>
+					<td class='step-details'>AboutYouPage.creditCardWithAnotherBank:  Radio button 'YES' is clicked.</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>6:15:37 PM</td>
+					<td class='step-details'>AboutYouPage.homeAddressSameAsBusiness:  Radio button 'YES' is clicked.</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>6:15:39 PM</td>
+					<td class='step-details'>AboutYouPage.fillDateYouMovedIn:  Field populated with '10.10.2000'</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>6:15:40 PM</td>
+					<td class='step-details'>AboutYouPage.homeAlsoCorrespondance:  Radio button 'YES' is clicked.</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>6:15:40 PM</td>
+					<td class='step-details'>SharedObjects.clickSaveAndContinueButton:  Object 'Save And Continue' clicked</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>6:15:44 PM</td>
+					<td class='step-details'>AboutYouPage.chooseSourceOfInvesment:  Dropdown option chosen 'Personal savings excl. savings from employment'</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>6:15:45 PM</td>
+					<td class='step-details'>AboutYouPage.fillSourceAmount:  Field populated with '10000'</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>6:15:47 PM</td>
+					<td class='step-details'>SharedObjects.clickSaveAndContinueButton:  Object 'Save And Continue' clicked</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>6:15:48 PM</td>
+					<td class='step-details'>RelatedPersonsPage.choosePosition:  Dropdown option chosen 'Other'</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>6:15:49 PM</td>
+					<td class='step-details'>RelatedPersonsPage.shareholderWith25Percent:  Radio button 'NO' is clicked.</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>6:15:51 PM</td>
+					<td class='step-details'>RelatedPersonsPage.clickSaveButton:  Object 'Save' clicked</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>6:15:52 PM</td>
+					<td class='step-details'>RelatedPersonsPage.hasRoleInBusiness:  Radio button 'NO' is clicked.</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>6:15:53 PM</td>
+					<td class='step-details'>RelatedPersonsPage.choosePosition:  Dropdown option chosen 'Accountant'</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>6:15:54 PM</td>
+					<td class='step-details'>RelatedPersonsPage.shareholderWith25Percent:  Radio button 'NO' is clicked.</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>6:15:54 PM</td>
+					<td class='step-details'>RelatedPersonsPage.signatoryInAccount:  Radio button 'YES' is clicked.</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>6:15:56 PM</td>
+					<td class='step-details'>RelatedPersonsPage.clickSaveButton:  Object 'Save' clicked</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>6:15:56 PM</td>
+					<td class='step-details'>RelatedPersonsPage.hasRoleInBusiness:  Radio button 'YES' is clicked.</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>6:15:58 PM</td>
+					<td class='step-details'>RelatedPersonsPage.choosePosition:  Dropdown option chosen 'CEO'</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>6:15:59 PM</td>
+					<td class='step-details'>RelatedPersonsPage.shareholderWith25Percent:  Radio button 'YES' is clicked.</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>6:15:59 PM</td>
+					<td class='step-details'>RelatedPersonsPage.fillPercentageShareholding:  Field populated with '50'</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>6:16:00 PM</td>
+					<td class='step-details'>RelatedPersonsPage.signatoryInAccount:  Radio button 'YES' is clicked.</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>6:16:01 PM</td>
+					<td class='step-details'>RelatedPersonsPage.clickSaveButton:  Object 'Save' clicked</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>6:16:01 PM</td>
+					<td class='step-details'>SharedObjects.clickSaveAndContinueButton:  Object 'Save And Continue' clicked</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>6:16:07 PM</td>
+					<td class='step-details'>ManagingYourAccountPage.chooseSignatoryRules:  First radio button clicked.</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>6:16:08 PM</td>
+					<td class='step-details'>ManagingYourAccountPage.chooseChairpersonOfTheMeeting:  Dropdown option chosen 'Coapp-two Test'</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>6:16:09 PM</td>
+					<td class='step-details'>ManagingYourAccountPage.fillResolutionsDate:  Field populated with '01.01.2018'</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>6:16:11 PM</td>
+					<td class='step-details'>ManagingYourAccountPage.tickConfirmMyAcceptance:  Object 'I being a director confirm my acceptance to the terms' clicked</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>6:16:11 PM</td>
+					<td class='step-details'>SharedObjects.clickSaveAndContinueButton:  Object 'Save And Continue' clicked</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>6:16:14 PM</td>
+					<td class='step-details'>ManagingYourAccountPage.changeYourSelection:  Radio button 'NO' is clicked.</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>6:16:15 PM</td>
+					<td class='step-details'>ManagingYourAccountPage.confirmTermsAndConditions:  Object 'I confirm that I have read and agree to the terms and conditions' clicked</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>6:16:16 PM</td>
+					<td class='step-details'>ManagingYourAccountPage.howToReceiveActivationCode:  Dropdown option chosen 'Email'</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>6:16:16 PM</td>
+					<td class='step-details'>ManagingYourAccountPage.fillSecurityPassNumber:  Field populated with '123456'</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>6:16:17 PM</td>
+					<td class='step-details'>ManagingYourAccountPage.fillConfirmSecurityPassNumber:  Field populated with '123456'</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>6:16:18 PM</td>
+					<td class='step-details'>ManagingYourAccountPage.fillMemorableWord:  Field populated with 'test'</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>6:16:19 PM</td>
+					<td class='step-details'>ManagingYourAccountPage.fillMemorablePlace:  Field populated with 'test'</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>6:16:22 PM</td>
+					<td class='step-details'>SharedObjects.clickSaveAndContinueButton:  Object 'Save And Continue' clicked</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>6:16:23 PM</td>
+					<td class='step-details'>ManagingYourAccountPage.clickAddApplicationBCC:  Object 'Add To Application (BCC)' clicked</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>6:16:23 PM</td>
+					<td class='step-details'>ManagingYourAccountPage.fillCreditCardLimit:  Field populated with '10000'</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>6:16:24 PM</td>
+					<td class='step-details'>ManagingYourAccountPage.cachMachineWithdrawl:  Radio button 'YES' is clicked.</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>6:16:24 PM</td>
+					<td class='step-details'>ManagingYourAccountPage.businessNameOnCard:  Radio button 'NO' is clicked.</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>6:16:25 PM</td>
+					<td class='step-details'>ManagingYourAccountPage.howMuchViaDirectDebit:  First radio button clicked.</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>6:16:26 PM</td>
+					<td class='step-details'>ManagingYourAccountPage.howWillYouUseCard:  Dropdown option chosen 'Working capital'</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>6:16:26 PM</td>
+					<td class='step-details'>ManagingYourAccountPage.fillMemorableWordSecurity:  Field populated with 'Test'</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>6:16:27 PM</td>
+					<td class='step-details'>ManagingYourAccountPage.clickSave:  Object 'Save' clicked</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>6:16:28 PM</td>
+					<td class='step-details'>ManagingYourAccountPage.receveCallAboutCardPayments:  Radio button 'YES' is clicked.</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>6:16:29 PM</td>
+					<td class='step-details'>SharedObjects.clickSaveAndContinueButton:  Object 'Save And Continue' clicked</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>6:16:33 PM</td>
+					<td class='step-details'>TaxDeclarationPage.agreeToFATCADeclaration:  Object 'Yes I agree to this declaration' clicked</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>6:16:34 PM</td>
+					<td class='step-details'>SharedObjects.clickSaveAndContinueButton:  Object 'Save And Continue' clicked</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>6:16:39 PM</td>
+					<td class='step-details'>SummaryPage.confirmTermsAndConditions:  Object 'I confirm that I have read and agree to the Terms and Conditions, Pricing Information, UK FSCS Information Sheet and Exclusions List and forthcoming changes.' clicked</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>6:16:41 PM</td>
+					<td class='step-details'>SummaryPage.confirmNotPartOfAffinity:  Object 'I confirm that the business will not be part of an affinity group, or part of a group of companies with a global or national parent company, has not issued bearer shares, is not a special purpose vehicle and that to the best of my knowledge all the information about me, any other signatories, and the business is truthful and accurate and I confirm that the business wishes to open a bank account with you.' clicked</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>6:16:44 PM</td>
+					<td class='step-details'>SummaryPage.tickIHaveReadInfoAbove:  Object 'I have read the information above and I wish to submit this application' clicked</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>6:16:50 PM</td>
+					<td class='step-details'>SummaryPage.clickSubmitAccountApplicationButton:  Object 'Submit Account Application' clicked</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>6:16:50 PM</td>
+					<td class='step-details'>SummaryPage.checkIfApplicationWasSuccessful:  APPLICATION SUBMISSION IS COMPLETED</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>6:16:50 PM</td>
+					<td class='step-details'>BrowserFactory.closeBrowser:  Browser closed!</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<!-- subview left -->
+
+	<div class='subview-right left'>
+		<div class='view-summary'>
+			<h5 class='test-name'></h5>
+
+			<div id='step-filters' class="right">
+				<span class="blue-text" status="info" alt="info" title="info"><i class="material-icons">info_outline</i></span>
+				<span class="green-text" status="pass" alt="pass" title="pass"><i class="material-icons">check_circle</i></span>
+				<span class="red-text" status="fail" alt="fail" title="fail"><i class="material-icons">cancel</i></span>
+				<span class="red-text text-darken-4" status="fatal" alt="fatal" title="fatal"><i class="material-icons">cancel</i></span>
+				<span class="pink-text text-lighten-1" status="error" alt="error" title="error"><i class="material-icons">error</i></span>
+				<span class="orange-text" alt="warning" status="warning" title="warning"><i class="material-icons">warning</i></span>
+				<span class="teal-text" status="skip" alt="skip" title="skip"><i class="material-icons">redo</i></span>
+				<span status="clear" alt="Clear filters" title="Clear filters"><i class="material-icons">clear</i></span>
+			</div>
+		</div>
+	</div>
+	<!-- subview right -->
+
+</div>
+<!-- test view -->
+<!-- category view -->
+<!-- exception view -->
+<div id='dashboard-view' class='view hide'>
+	<div class='card-panel transparent np-v'>
+		<h5>Dashboard</h5>
+
+		<div class='row'>
+			<div class='col s2'>
+				<div class='card-panel r'>
+					Tests
+					<div class='panel-lead'>1</div>
+				</div>
+			</div>
+			<div class='col s2'>
+				<div class='card-panel r'>
+					Steps
+					<div class='panel-lead'>145</div>
+				</div>
+			</div>
+			<div class='col s2'>
+				<div class='card-panel r'>
+					Start
+					<div class='panel-lead'>Jul 1, 2018 06:13:43 PM</div>
+				</div>
+			</div>
+			<div class='col s2'>
+				<div class='card-panel r'>
+			 		End
+			 		<div class='panel-lead'>Jul 1, 2018 06:16:50 PM</div>
+				</div>
+			</div>
+			<div class='col s2'>
+				<div class='card-panel r'>
+					Time Taken
+					<div class='panel-lead'>0h 3m 7s+492ms</div>
+				</div>
+			</div>
+			<div class='col s4'>
+				<div class='card-panel dashboard-environment'>
+					<span class='right label cyan white-text'>Environment</span><p>&nbsp;</p>
+					
+					<table>
+						<tr>
+							<th>Name</th>
+							<th>Value</th>
+						</tr>
+							<tr>
+								<td>OS</td>
+								<td>Mac OS X</td>
+							</tr>
+							<tr>
+								<td>Host Name</td>
+								<td>lup-milos</td>
+							</tr>
+							<tr>
+								<td>User Name</td>
+								<td>milos</td>
+							</tr>
+							<tr>
+								<td>Environment</td>
+								<td>Dev</td>
+							</tr>
+							<tr>
+								<td>Browser</td>
+								<td>chrome</td>
+							</tr>
+					</table>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- dashboard view -->
+<!-- testrunner-logs view -->
+		</div>
+		<!-- container -->
+
+		<script>
+			var statusGroup = {
+				passParent: 1,
+				failParent: 0,
+				fatalParent: 0,
+				errorParent: 0,
+				warningParent: 0,
+				skipParent: 0,
+				exceptionsParent: 0,
+				
+				passChild: 0,
+				failChild: 0,
+				fatalChild: 0,
+				errorChild: 0,
+				warningChild: 0,
+				skipChild: 0,
+				infoChild: 145,
+				exceptionsChild: 0,
+				
+				passGrandChild: 0,
+				failGrandChild: 0,
+				fatalGrandChild: 0,
+				errorGrandChild: 0,
+				warningGrandChild: 0,
+				skipGrandChild: 0,
+				infoGrandChild: 0,
+				exceptionsGrandChild: 0,
+			};
+		</script>
+		
+			<script src='https://cdn.rawgit.com/anshooarora/extentreports-java/fca20fb7653aade98810546ab96a2a4360e3e712/dist/js/extent.js' type='text/javascript'></script>
+		
+		
+ 		<script type='text/javascript'>
+ 		</script>
+	</body>
+	
+</html>

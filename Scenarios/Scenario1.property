@@ -1,0 +1,91 @@
+
+################################################################
+#							SCENARIO 1
+################################################################
+
+
+# __________________________ Test Setup ________________________
+
+	URL_TYPE = Customer
+
+# _______________________ Getting Started ______________________
+
+	LEGAL_STRUCTURE_OF_BUSINESS = Sole Trader
+
+# _______________________ Business Overview ____________________
+
+	TITLE = Mr.
+	FORENAMES = RTestFname
+	SURNAME = RTestLname
+	BUSINESS_START_DATE = 01.01.2018
+	WHAT_INFLUENCED_YOUR_DECISION = Convenience - HSBC is my nearest branch
+	SEARCH_FOR_ACTIVITY = Test
+	SEARCH_ACTIVITY_RESULT_LINK = COMPUTER CONSULTANCY ACTIVITIES
+	WHAT_YOUR_BUSINESS_DOES = Computing developers
+	DETAILS_OF_THE_PRODUCT = Computing developers
+	WHERE_BUSINESS_OPERATES_FROM = Home Based
+	POSTCODE = E1 1LF
+	FIND_MY_ADDRESS_LINK = 37-39, Commercial Road, London, E1 1LF
+	EMAIL_ADDRESS = anthony@roberts.com
+	MOBILE_NUMBER = 07926667109
+	BIRTH_DATE = 11.11.1980
+
+# ____________________ Business Details ________________________
+
+	HOW_MANY_EMPLOYEES = 10
+	LICENCE_TO_OPERATE = Yes, I do have a licence
+	VAT_NUMBER = 123456
+	BUSINESS_EMAIL_ADDRESS = anthony@roberts.com
+	BUSINESS_CONTACT_NUMBER = 7926667109
+
+# _______________________ Business Finance _____________________
+
+	TURNOVER_FOR_NEXT_12_MONTHS = 100000
+	FORCAST_PROFIT_NEXT_YEAR = 50000
+	INITIALLY_INVESTED = 50000
+	SOURCE_TYPE = Personal investment  (e.g. your savings)
+	AMOUNT_IN_GBP_1 = 25000
+	INVESTOR_TITLE = Mr.
+	INVESTOR_FORENAMES = RtestCoappF
+	INVESTOR_SURNAME = RtestCoappL
+	INVESTED_AMOUNT = 25000
+	INVESTOR_MOBILE_PHONE = 7789612345
+	INVESTOR_EMAIL_ADDRESS = datest2@gmail.com
+	HOW_MUCH_WILL_BE_DEPOSITED = 50000
+	HOW_WILL_THIS_BE_PAID_IN = Cash
+
+# ___________________________ About You ________________________
+
+	MERITAL_STATUS = Single
+	RESIDENTIAL_STATUS = Owner occupier
+	GROSS_INCOME_LAST_YEAR = 50000
+	YEARS_WITH_EXISTING_BANK = 10
+	DATE_MOVED_IN = 10.10.2000
+	SOURCE_OF_INVESTMENT_1 = Personal savings excl. savings from employment
+	SOURCE_AMOUNT_1 = 25000
+
+# _________________________ Related Persons ____________________
+
+	ROLES_IN_BUSINESS = Business Owner
+	POSITION_1 = Business Owner
+
+# ____________________ Managing Your Account ___________________
+
+	HOW_TO_RECEIVE_ACTIVATION_CODE = Text
+	SECURITY_PASS_NUMBER = 123456
+	CONFIRM_SECURITY_PASS_NUMBER = 123456
+	MEMORABLE_WORD = test
+	MEMORABLE_PLACE = test
+	CREDIT_CARD_LIMIT = 20000
+	HOW_WILL_YOU_USE_CARD = Working capital
+	MEMORABLE_WORD_SECURITY = test
+	OVERDRAFT_AMOUNT = 10000
+	HOW_WILL_YOU_USE_OVERDRAFT = Working capital
+
+# ________________________ Tax Declaration _____________________
+
+	#none
+
+# ____________________________ Summary _________________________
+
+	#none
